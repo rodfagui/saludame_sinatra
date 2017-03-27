@@ -8,7 +8,15 @@ require 'sinatra'
 # 	end
 # end 
 
-get '/makers/:nombre' do
-	@name = params[:nombre]
+# get '/makers/:nombre' do
+# 	@name = params[:nombre]
+# 	erb :index
+# end
+
+get '/' do
 	erb :index
+end
+
+post '/hola' do
+	"Hola #{params[:verbo]}!"
 end

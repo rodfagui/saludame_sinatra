@@ -1,3 +1,5 @@
-<% if @name %>
-	<h1><%= "Hola " + @name.capitalize + "!" %></h1>
-<% end %>
+<h1>Hola dime a quien saludar</h2> 	
+<form action="/hola" method="post">
+	<input type="text" name="verbo" />
+	<input type="submit" value="Submit" />
+</form>
